@@ -1,0 +1,107 @@
+* {
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+header {
+  padding: 2rem 10rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #273b61;
+}
+
+.search {
+  background-color: #ffffff;
+  border: 0;
+  color: #273b61;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+.search:focus {
+  outline: 0;
+}
+
+.search::-moz-placeholder {
+  color: #273b61;
+}
+
+.search:-ms-input-placeholder {
+  color: #273b61;
+}
+
+.search::placeholder {
+  color: #273b61;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  width: 300px;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.2px 4px 5px rgba(0, 0, 0, 0.733);
+  background-color: #273b61;
+  position: relative;
+  overflow: hidden;
+}
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+.movie img {
+  width: 100%;
+}
+
+.movie-info {
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 1px;
+}
+.movie-info .green {
+  background-color: rgb(193, 236, 193);
+  color: rgb(21, 99, 21);
+}
+.movie-info .orange {
+  background-color: rgb(247, 184, 132);
+  color: rgb(212, 99, 7);
+}
+.movie-info .red {
+  background-color: rgb(218, 141, 141);
+  color: rgb(185, 37, 37);
+}
+.movie-info span {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+.movie-info h3 {
+  margin-top: 0;
+}
+
+.overview {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #273b61;
+  padding: 1rem;
+  color: #ffffff;
+  max-height: 100%;
+  transform: translateY(101%);
+  transition: transform 0.4s ease-in;
+}
+
+h1:hover {
+  cursor: pointer;
+}
